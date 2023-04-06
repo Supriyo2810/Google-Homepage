@@ -1,0 +1,425 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 100vh;
+}
+section header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* padding: 20px; */
+}
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+section header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+section header ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+section header ul li a:hover{
+    text-decoration: underline;
+}
+section header ul li img{
+    width: 18px;
+    height: 18px;
+}
+section header ul li button{
+    background-color: #4584ef;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.main .google{
+    height: 105px;
+}
+.main .searchGlass{
+    height: 18px;
+}
+.mic-cam img{
+    height: 19px;
+}
+section .main{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 220px;
+}
+section .main .searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    border-color: #cccccca3;
+}
+section .main .searchbox .search{
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 0;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+section .main .searchbox .icons{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+section .searchbox :hover{
+    box-shadow: 1px 1px 3px 3px rgba(162, 161, 161, 0.19);
+    border-color: white;
+}
+section .main .button button{
+    margin: 30px 5px;
+    padding: 8px 15px;
+    color: #555;
+    font-size: 14px;
+    border: 1px solid #ececec64;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    background-color: #ececec64;
+}
+section .main .button button:hover{
+    border-color: #c8c8c8c7;
+}
+section .main .lang{
+    font-size: 13px;
+    color: #555;
+}
+section .main .lang a{
+    text-decoration: none;
+    margin: 4px;
+}
+section .main .lang a:hover{
+    text-decoration: underline;
+}
+section .footer{
+    position: absolute;
+    width: 100%;
+    background-color: #f2f2f2;
+    bottom: 0;
+    left: 0;
+}
+section .footer .row{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #c8c8c8;
+}
+section .footer .row ul{
+    display: flex;
+}
+section .footer .row ul li{
+    list-style: none;
+}
+section .footer .row ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #5f6368;
+    margin-right: 25px;
+}
+section .footer .row ul li a:hover{
+    text-decoration: underline;
+}
+section .country{
+    position: absolute;
+    width: 100%;
+    background-color: #f2f2f2;
+    bottom: 52px;
+}
+section .country div{
+    display: flex;
+    padding: 15px;
+    margin-left: 23px;
+    font-size: 15px;
+    color: #5f6368;
+}
+@media all and (min-width: 651px) and (max-width:700px){
+    section .main{
+        margin-bottom: 200px;
+        margin-left: -60px;
+    }
+    section .country div{
+        font-size: 14px;
+    }
+    section .footer .row ul li a{
+        margin-right: 18px;
+        font-size: 13px;
+    }
+}
+@media all and (min-width: 601px) and (max-width: 650px){
+    section .main{
+        margin-bottom: 180px;
+        margin-left: -60px;
+    }
+    section .footer .row ul li a{
+        margin-right: 15px;
+        font-size: 12px;
+    }
+    section .country div{
+        padding: 15px;
+        margin-left: 23px;
+        font-size: 13px;
+    }
+}
+@media all and (min-width: 551px) and (max-width: 600px){
+    section .main{
+        width: 500px;
+        margin-bottom: 160px;
+        margin-left: -60px;
+    }
+    section .footer .row ul li a{
+        margin-right: 15px;
+        font-size: 12px;
+    }
+    section .country div{
+        padding: 15px;
+        margin-left: 23px;
+        font-size: 13px;
+    }
+}
+@media all and (min-width: 505px) and (max-width: 550px){
+    section .main{
+        width: 455px;
+        margin-bottom: 140px;
+        margin-left: -60px;
+    }
+    section .footer .row ul li a{
+        margin-right: 14px;
+        font-size: 11px;
+    }
+    section .country div{
+        padding: 15px;
+        margin-left: 23px;
+        font-size: 12px;
+    }
+}
+@media all and (min-width: 465px) and (max-width: 506px){
+    section .main{
+        width: 415px;
+        margin-bottom: 120px;
+        margin-left: -60px;
+    }
+    section .footer .row ul li a{
+        margin-right: 12px;
+        font-size: 10px;
+    }
+    section .country div{
+        padding: 15px;
+        margin-left: 23px;
+        font-size: 11px;
+    }
+    .main .google{
+        height: 100px;
+    }
+    section .main .lang{
+        text-align: center;
+    }
+}
+@media all and (min-width: 420px) and (max-width: 464px){
+    section .main{
+        width: 370px;
+        margin-bottom: 100px;
+        margin-left: -60px;
+    }
+    section .footer .row{
+        display: block;
+    }
+    section .country{
+        bottom: 85px;
+    }
+    section .footer .row ul li a{
+        margin-right: 12px;
+        font-size: 10px;
+    }
+    section .country div{
+        padding: 15px;
+        margin-left: 23px;
+        font-size: 11px;
+    }
+    .main .google{
+        height: 95px;
+    }
+    section .main .lang{
+        text-align: center;
+    }
+    section header ul li button{
+        font-size: 13px;
+        padding: 7px 12px;
+    }
+    section header ul li a{
+        font-size: 12px;
+    }
+    section header ul li img{
+        width: 16px;
+        height: 16px;
+    }
+}
+@media all and (min-width: 370px) and (max-width: 419px){
+    section .main{
+        width: 320px;
+        margin-bottom: 80px;
+        margin-left: -60px;
+    }
+    section .footer .row{
+        display: block;
+    }
+    section .country{
+        bottom: 85px;
+    }
+    section .footer .row ul li a{
+        margin-right: 12px;
+        font-size: 10px;
+    }
+    section .country div{
+        padding: 15px;
+        margin-left: 23px;
+        font-size: 11px;
+    }
+    .main .google{
+        height: 90px;
+    }
+    section .main .lang{
+        text-align: center;
+        font-size: 12px;
+    }
+    section header ul li button{
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    section header ul li a{
+        font-size: 11px;
+    }
+    section header ul li img{
+        width: 15px;
+        height: 15px;
+    }
+    section .main .button button{
+        margin: 25px 5px;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+@media all and (min-width: 300px) and (max-width: 369px){
+    section .main{
+        width: 280px;
+        margin-bottom: 50px;
+        margin-left: -60px;
+    }
+    section .footer .row{
+        display: block;
+    }
+    section .country{
+        bottom: 85px;
+    }
+    section .footer .row ul li a{
+        margin-left: 0;
+        margin-right: 12px;
+        font-size: 10px;
+    }
+    section .country div{
+        padding: 15px;
+        margin-left: 23px;
+        font-size: 11px;
+    }
+    .main .google{
+        height: 85px;
+    }
+    section .main .lang{
+        text-align: center;
+        font-size: 11px;
+    }
+    section header ul li button{
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    section header ul li a{
+        font-size: 10px;
+    }
+    section header ul li img{
+        width: 15px;
+        height: 15px;
+    }
+    section .main .button button{
+        margin: 18px 5px;
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+}
+@media all and (max-width: 299px){
+    section .main{
+        width: 260px;
+        margin-bottom: 40px;
+        margin-left: -60px;
+    }
+    section .footer .row{
+        display: block;
+    }
+    section .country{
+        bottom: 85px;
+    }
+    section .footer .row ul li a{
+        margin-left: 0;
+        margin-right: 10px;
+        font-size: 9px;
+    }
+    section .country div{
+        padding: 15px;
+        margin-left: 23px;
+        font-size: 10px;
+    }
+    .main .google{
+        height: 80px;
+    }
+    section .main .lang{
+        text-align: center;
+        font-size: 10px;
+    }
+    section header ul li button{
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    section header ul li a{
+        font-size: 10px;
+    }
+    section header ul li img{
+        width: 15px;
+        height: 15px;
+    }
+    section .main .button button{
+        margin: 18px 5px;
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+}
